@@ -4,8 +4,8 @@
 import { ceil, floor, nice, normalize, ticks, tickStep } from './utils';
 
 interface ILinear {
-  domain: [number, number];
-  range: [number, number];
+  domain: number[];
+  range: number[];
   interpolate?: typeof interpolateNumber;
 }
 
