@@ -1,6 +1,6 @@
-import Circle from './components/renderer/shapes/Circle';
-import Rect from './components/renderer/shapes/Rect';
-import ViewBox from './components/renderer/ViewBox';
+import Circle from './renderer/shapes/Circle';
+import Rect from './renderer/shapes/Rect';
+import ViewBox from './renderer/ViewBox';
 
 function App() {
   return (
