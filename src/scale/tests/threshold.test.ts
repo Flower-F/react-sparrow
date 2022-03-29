@@ -1,7 +1,7 @@
 import createThreshold from '../threshold';
 
 const scale = createThreshold({
-  domain: [10000, 100000], // 1000, 10000 就是两个分割值
+  domain: [10000, 100000], // 10000, 100000 就是两个分割值
   range: ['white', 'pink', 'red'],
 });
 
