@@ -1,6 +1,6 @@
 import { compose } from '../utils';
 
-export function createCoordinate({
+export default function createCoordinate({
   x,
   y,
   width,

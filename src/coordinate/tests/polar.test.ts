@@ -1,5 +1,5 @@
 import cartesian from '../main/cartesian';
-import { createCoordinate } from '../main/coordinate';
+import createCoordinate from '../main/coordinate';
 import polar from '../main/polar';
 
 describe('极坐标系变化', () => {
