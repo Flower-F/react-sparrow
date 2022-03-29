@@ -5,7 +5,7 @@
 // y = a * x.getTime() + b
 import createLinear from './linear';
 
-export function createTime({
+export default function createTime({
   domain,
   range,
 }: {

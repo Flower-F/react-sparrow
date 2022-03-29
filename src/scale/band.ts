@@ -1,7 +1,9 @@
+// Band 比例尺
+
 import createOrdinal from './ordinal';
 import { band } from './utils';
 
-export function createBand(options: {
+export default function createBand(options: {
   domain: string[];
   range: number[];
   padding: number;

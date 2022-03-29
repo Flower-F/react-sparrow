@@ -1,4 +1,4 @@
-import { createBand } from '../band';
+import createBand from '../band';
 
 const options = {
   domain: ['苹果', '香蕉', '梨'],
@@ -10,12 +10,12 @@ const scale = createBand(options);
 
 describe('Band 比例尺', () => {
   it('Band 比例尺应该显示对应的映射数值', () => {
-    scale('苹果'); // 20
-    scale('香蕉'); // 120
-    scale('梨'); // 220
+    expect(scale('苹果')).toBe(20); // 20
+    expect(scale('香蕉')).toBe(120); // 120
+    expect(scale('梨')).toBe(220); // 220
     //@ts-ignore
-    scale.bandWidth(); // 80
+    expect(scale.bandWidth()).toBe(80); // 80
     //@ts-ignore
-    scale.step(); // 100
+    expect(scale.step()).toBe(100); // 100
   });
 });
