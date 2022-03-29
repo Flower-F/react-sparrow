@@ -1,7 +1,7 @@
 import createLinear from './linear';
-import { ticks, nice, log } from './utils';
+import { ticks, nice, log } from '../utils';
 
-export function createLog({
+export default function createLog({
   domain,
   base = Math.E,
   range,

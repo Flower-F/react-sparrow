@@ -1,7 +1,7 @@
 // 线性比例尺
 // y = a * x + b
 
-import { ceil, floor, nice, normalize, ticks, tickStep } from './utils';
+import { ceil, floor, nice, normalize, ticks, tickStep } from '../utils';
 
 interface ILinear {
   domain: number[];

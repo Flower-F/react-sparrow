@@ -1,6 +1,7 @@
 import createBand from './main/band';
 import createIdentity from './main/identity';
 import createLinear from './main/linear';
+import createLog from './main/log';
 import createOrdinal from './main/ordinal';
 import createPoint from './main/point';
 import createQuantile from './main/quantile';
@@ -18,15 +19,7 @@ const scales = {
   createThreshold,
   createTime,
   createQuantile,
+  createLog,
 };
-// export    from './identity';
-// export    from './ordinal';
-// export {  } from './band';
-// export {  } from './point';
-// export { createQuantile } from './quantile';
-// export {  } from './threshold';
-// export {  } from './quantize';
-// export {  } from './time';
-// export { createLog } from './log';
 
 export default scales;
