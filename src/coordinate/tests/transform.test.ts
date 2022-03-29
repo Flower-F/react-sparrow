@@ -1,4 +1,4 @@
-import { reflect, scale, translate, transpose } from '../transform';
+import { reflect, scale, translate, transpose } from '../main/transform';
 
 describe('Transform Test', () => {
   it('Translate', () => {
