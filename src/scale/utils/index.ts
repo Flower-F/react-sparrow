@@ -70,3 +70,25 @@ export function ceil(n: number, base: number) {
 export function floor(n: number, base: number) {
   return base * Math.floor(n / base);
 }
+
+export function band({
+  domain,
+  range,
+  padding,
+}: {
+  domain: string[];
+  range: number[];
+  padding: number;
+}) {
+  const [r0, r1] = range;
+  const n = domain.length;
+  const step = (r1 - r0) / (n + padding);
+  const bandWidth = step * (1 - padding);
+  const interval = step - bandWidth;
+  const x = (_: any, i: number) => r0 + interval + step * i;
+  return {
+    step,
+    bandWidth,
+    bandRange: new Array(n).fill(0).map(x),
+  };
+}
