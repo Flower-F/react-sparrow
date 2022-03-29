@@ -1,9 +1,9 @@
 import { Children, cloneElement, FC, FunctionComponentElement } from 'react';
-import { ICircleProps } from '../components/shapes/Circle';
-import { ILineProps } from '../components/shapes/Line';
-import { IRectProps } from '../components/shapes/Rect';
-import { IRingProps } from '../components/shapes/Ring';
-import { ITextProps } from '../components/shapes/Text';
+import { ICircleProps } from './shapes/Circle';
+import { ILineProps } from './shapes/Line';
+import { IRectProps } from './shapes/Rect';
+import { IRingProps } from './shapes/Ring';
+import { ITextProps } from './shapes/Text';
 
 interface IViewBoxProps {
   x: number;

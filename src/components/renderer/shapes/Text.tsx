@@ -1,15 +1,21 @@
 import { FC } from 'react';
-import { getNormalTransformStyles, TransformStyles } from './config';
+import { ICommonProps } from './config';
+import { getNormalTransformStyles } from './config/transform';
 
 export interface ITextProps {
   fontSize: number;
   x: number;
   y: number;
   content: string;
-  transformStyles?: TransformStyles;
 }
 
-const Text: FC<ITextProps> = ({ fontSize, x, y, content, transformStyles }) => {
+const Text: FC<ITextProps & ICommonProps> = ({
+  fontSize,
+  x,
+  y,
+  content,
+  transformStyles,
+}) => {
   return (
     <g transform={getNormalTransformStyles(transformStyles)}>
       <text x={x} y={y} fontSize={fontSize}>

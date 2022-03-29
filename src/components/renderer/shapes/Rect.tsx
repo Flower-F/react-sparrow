@@ -1,12 +1,12 @@
 import { FC } from 'react';
-import { getNormalTransformStyles, TransformStyles } from './config';
+import { ICommonProps } from './config';
+import { getNormalTransformStyles } from './config/transform';
 
 export interface IRectProps {
   width: number;
   height: number;
   x: number;
   y: number;
-  transformStyles?: TransformStyles;
 }
 
 // rect 不支持 width 和 height 是负数，下面这种情况将绘制不出来
@@ -28,7 +28,13 @@ function normalizeReactProps(
   };
 }
 
-const Rect: FC<IRectProps> = ({ width, height, x, y, transformStyles }) => {
+const Rect: FC<IRectProps & ICommonProps> = ({
+  width,
+  height,
+  x,
+  y,
+  transformStyles,
+}) => {
   const { normalHeight, normalWidth, normalX, normalY } = normalizeReactProps(
     width,
     height,

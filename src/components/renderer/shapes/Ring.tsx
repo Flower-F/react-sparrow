@@ -1,5 +1,6 @@
 import { FC } from 'react';
-import { getNormalTransformStyles, TransformStyles } from './config';
+import { ICommonProps } from './config';
+import { getNormalTransformStyles } from './config/transform';
 
 const DEFAULT_STROKE_WIDTH = 1;
 
@@ -11,10 +12,9 @@ export interface IRingProps {
   stroke: string;
   strokeWidth: number;
   fill?: string;
-  transformStyles?: TransformStyles;
 }
 
-const Ring: FC<IRingProps> = ({
+const Ring: FC<IRingProps & ICommonProps> = ({
   cx,
   cy,
   r1,
