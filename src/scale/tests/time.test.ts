@@ -1,4 +1,4 @@
-import createTime from '../time';
+import createTime from '../main/time';
 
 const scale = createTime({
   domain: [new Date(2000, 0, 1), new Date(2000, 0, 2)],

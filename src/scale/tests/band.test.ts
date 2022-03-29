@@ -1,4 +1,4 @@
-import createBand from '../band';
+import createBand from '../main/band';
 
 const options = {
   domain: ['苹果', '香蕉', '梨'],

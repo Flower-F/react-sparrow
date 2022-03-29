@@ -1,4 +1,4 @@
-import createPoint from '../point';
+import createPoint from '../main/point';
 
 const options = {
   domain: ['苹果', '香蕉', '梨'],

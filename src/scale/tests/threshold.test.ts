@@ -1,4 +1,4 @@
-import createThreshold from '../threshold';
+import createThreshold from '../main/threshold';
 
 const scale = createThreshold({
   domain: [10000, 100000], // 10000, 100000 就是两个分割值

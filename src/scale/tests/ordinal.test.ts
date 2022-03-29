@@ -1,4 +1,4 @@
-import createOrdinal from '../ordinal';
+import createOrdinal from '../main/ordinal';
 
 const scale = createOrdinal({
   domain: ['苹果', '香蕉', '梨', '西瓜'],

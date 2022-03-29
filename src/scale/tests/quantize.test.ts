@@ -1,4 +1,4 @@
-import createQuantize from '../quantize';
+import createQuantize from '../main/quantize';
 
 const scale = createQuantize({
   domain: [0, 300577],

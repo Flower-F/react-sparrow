@@ -1,11 +1,12 @@
-import createBand from './band';
-import createIdentity from './identity';
-import createLinear from './linear';
-import createOrdinal from './ordinal';
-import createPoint from './point';
-import createQuantize from './quantize';
-import createThreshold from './threshold';
-import createTime from './time';
+import createBand from './main/band';
+import createIdentity from './main/identity';
+import createLinear from './main/linear';
+import createOrdinal from './main/ordinal';
+import createPoint from './main/point';
+import createQuantile from './main/quantile';
+import createQuantize from './main/quantize';
+import createThreshold from './main/threshold';
+import createTime from './main/time';
 
 const scales = {
   createLinear,
@@ -16,6 +17,7 @@ const scales = {
   createQuantize,
   createThreshold,
   createTime,
+  createQuantile,
 };
 // export    from './identity';
 // export    from './ordinal';

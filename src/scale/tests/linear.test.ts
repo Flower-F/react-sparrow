@@ -1,4 +1,4 @@
-import createLinear from '../linear';
+import createLinear from '../main/linear';
 
 const scale = createLinear({
   domain: [0, 1], // 输入范围是 [0, 1]

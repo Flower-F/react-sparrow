@@ -53,7 +53,7 @@ export function round(n: number) {
 
 // 修改定义域的间隔为整数，加强可读性
 export function nice(
-  domain: [number, number],
+  domain: number[],
   interval: {
     floor: (arg: number) => number;
     ceil: (arg: number) => number;
@@ -91,4 +91,8 @@ export function band({
     bandWidth,
     bandRange: new Array(n).fill(0).map(x),
   };
+}
+
+export function log(n: number, base: number) {
+  return Math.log(n) / Math.log(base);
 }

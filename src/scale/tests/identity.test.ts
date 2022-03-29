@@ -1,4 +1,4 @@
-import createIdentity from '../identity';
+import createIdentity from '../main/identity';
 
 const scale = createIdentity();
 
